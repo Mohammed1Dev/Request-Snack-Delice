@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snack~Délice</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">    <link rel="stylesheet" href="public/css/style.css" />
+  </head>
+  <body onload="getMenu();nbrPanier()">
+    <main>
+   
+      <section class="glass">
+        <div id="head">
+          <img src="public/img/logo.png" alt="">
+          <h1 id="title">Welcome To SnackDélice</h1>
+          <h3 id="subtitle2">Choose the Eat Method you want</h3>
+        </div>
+      
+        <div id="container">
+            
+                <ul class="row" id="CategoryMenu">
+                   
+                    
+                </ul>
+            
+            <div id="menu" class="row">
+                
+            </div>
+        </div>
+      </section>
+    
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content" id="popup">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Produit details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" >
+                <form method="POST" id="Model_body" action="">
+                    </form>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Large modal -->
+      <button id="panier" class="choice" onclick="getAllPanier()" data-toggle="modal" data-target=".bd-example-modal-lg" ><img src="./public/img/panier.png" alt="panier img" ><span id="panierNomber"> 0</span></button>
+
+     
+
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <section class="ftco-section ftco-cart">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ftco-animate">
+                        <div class="cart-list">
+                            <table class="table">
+                                <thead class="thead-primary">
+                                    <tr class="text-center">
+                                        <th>&nbsp;</th>
+                                        <th>&nbsp;</th>
+                                        <th>Produit</th>
+                                        <th>Prix</th>
+                                        <th>Quantité</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody">
+                             
+
+    </div>
+  </div>
+</div>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+
+    <!-- Button trigger modal -->
+
+    <script src="public/js/manipulation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./public/js/axios.js"></script>
+  </body>
+</html>
