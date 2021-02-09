@@ -1,0 +1,24 @@
+{ 
+    "_id" : ObjectId("601fefaafa82db39d4659c38"), 
+    "nom" : "nos-sandwichs"
+},
+{ 
+    "_id" : ObjectId("601ff076fa82db39d4659c3a"), 
+    "nom" : "Petites-faims"
+},
+{ 
+    "_id" : ObjectId("601ff083fa82db39d4659c3b"), 
+    "nom" : "Salades"
+},
+{ 
+    "_id" : ObjectId("601ff091fa82db39d4659c3c"), 
+    "nom" : "boissons"
+},
+{ 
+    "_id" : ObjectId("601ff09bfa82db39d4659c3d"), 
+    "nom" : "frites"
+},
+{ 
+    "_id" : ObjectId("601ff0f3fa82db39d4659c3e"), 
+    "nom" : "desserts"
+}

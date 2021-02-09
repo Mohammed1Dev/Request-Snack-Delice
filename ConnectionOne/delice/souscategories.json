@@ -1,0 +1,66 @@
+{ 
+    "_id" : ObjectId("601ffb7ccd8371140457693a"), 
+    "nom" : "grand mcwrap sauce fromagère", 
+    "image" : "big-tastybig-tasty.png", 
+    "category" : ObjectId("601fefaafa82db39d4659c38")
+},
+{ 
+    "_id" : ObjectId("601ffbedcd8371140457693b"), 
+    "nom" : "Recette Fromage Fondu", 
+    "image" : "produit-miniature-recette.png", 
+    "category" : ObjectId("601fefaafa82db39d4659c38")
+},
+{ 
+    "_id" : ObjectId("601ffd07cd8371140457693f"), 
+    "nom" : "Swiss Cheese", 
+    "image" : "swiss-cheese-miniature.png", 
+    "category" : ObjectId("601ff076fa82db39d4659c3a")
+},
+{ 
+    "_id" : ObjectId("601ffd5dcd83711404576941"), 
+    "nom" : "P'tit wrap miel moutarde", 
+    "image" : "petit_wrap.png", 
+    "category" : ObjectId("601ff076fa82db39d4659c3a")
+},
+{ 
+    "_id" : ObjectId("601ffde4cd83711404576943"), 
+    "nom" : "Salade-Italienne", 
+    "image" : "salade_italienne_0.png", 
+    "category" : ObjectId("601ff083fa82db39d4659c3b")
+},
+{ 
+    "_id" : ObjectId("601ffe2acd83711404576945"), 
+    "nom" : "Salade Pêcheur", 
+    "image" : "icone_salade_pecheur_mcdonalds.png", 
+    "category" : ObjectId("601ff083fa82db39d4659c3b")
+},
+{ 
+    "_id" : ObjectId("601ffe7fcd83711404576946"), 
+    "nom" : "Jus de Pomme", 
+    "image" : "jus-pomme-miniature-3.png", 
+    "category" : ObjectId("601ff091fa82db39d4659c3c")
+},
+{ 
+    "_id" : ObjectId("601ffee5cd83711404576949"), 
+    "nom" : "Mcfizz Pamplemousse Rose", 
+    "image" : "mcfizz-pamplemousse-mini.png", 
+    "category" : ObjectId("601ff091fa82db39d4659c3c")
+},
+{ 
+    "_id" : ObjectId("602048ffbb72f015c8b4928d"), 
+    "nom" : "Frites", 
+    "image" : "frites.png", 
+    "category" : ObjectId("601ff09bfa82db39d4659c3d")
+},
+{ 
+    "_id" : ObjectId("60204952bb72f015c8b4928e"), 
+    "nom" : "petit donuts caramel fraise", 
+    "image" : "petit_donuts_caramel_fraise.png", 
+    "category" : ObjectId("601ff0f3fa82db39d4659c3e")
+},
+{ 
+    "_id" : ObjectId("60204971bb72f015c8b4928f"), 
+    "nom" : "mcflurry nature miniaturee", 
+    "image" : "mcflurry_nature_miniature.png", 
+    "category" : ObjectId("601ff0f3fa82db39d4659c3e")
+}

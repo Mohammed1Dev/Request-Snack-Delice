@@ -1,0 +1,380 @@
+{ 
+    "_id" : ObjectId("60216c18f47b620994743b2b"), 
+    "nom" : "big tasty", 
+    "prix" : NumberInt(50), 
+    "ingrediens" : "(Viande,fromage,pains)", 
+    "Quantity" : NumberInt(10), 
+    "codePromo" : "12009", 
+    "image" : "big-tasty.png", 
+    "souCategory" : ObjectId("601ffb7ccd8371140457693a")
+},
+{ 
+    "_id" : ObjectId("60216c59f47b620994743b2c"), 
+    "nom" : "big tasty mcdonalds", 
+    "prix" : NumberInt(60), 
+    "ingrediens" : "(Viande,fromage,pains)", 
+    "Quantity" : NumberInt(10), 
+    "codePromo" : "12009", 
+    "image" : "big-tasty_mcdonalds.png", 
+    "souCategory" : ObjectId("601ffb7ccd8371140457693a")
+},
+{ 
+    "_id" : ObjectId("60216c86f47b620994743b2d"), 
+    "nom" : "produit miniature-3", 
+    "prix" : NumberInt(70), 
+    "ingrediens" : "(Viande,fromage,pains)", 
+    "Quantity" : NumberInt(10), 
+    "codePromo" : "10098", 
+    "image" : "produit-miniature-3.png", 
+    "souCategory" : ObjectId("601ffb7ccd8371140457693a")
+},
+{ 
+    "_id" : ObjectId("60216ca1f47b620994743b2e"), 
+    "nom" : "triple cheese", 
+    "prix" : NumberInt(70), 
+    "ingrediens" : "(Viande,fromage,pains)", 
+    "Quantity" : NumberInt(10), 
+    "codePromo" : "10798", 
+    "image" : "triple-cheese.png", 
+    "souCategory" : ObjectId("601ffb7ccd8371140457693a")
+},
+{ 
+    "_id" : ObjectId("60216d2d82f4c04c986f1b3a"), 
+    "nom" : "petit chicken", 
+    "prix" : NumberInt(60), 
+    "ingrediens" : "(chicken,fromage,pains)", 
+    "Quantity" : NumberInt(20), 
+    "codePromo" : "7900", 
+    "image" : "petit-chicken2.png", 
+    "souCategory" : ObjectId("601ffbedcd8371140457693b")
+},
+{ 
+    "_id" : ObjectId("60216d5282f4c04c986f1b3b"), 
+    "nom" : "petit chicken wrap honing mosterd", 
+    "prix" : NumberInt(60), 
+    "ingrediens" : "(chicken,fromage,pains)", 
+    "Quantity" : NumberInt(20), 
+    "codePromo" : "7900", 
+    "image" : "petit-chicken-wrap-honing-mosterd.png", 
+    "souCategory" : ObjectId("601ffbedcd8371140457693b")
+},
+{ 
+    "_id" : ObjectId("60216d7c82f4c04c986f1b3c"), 
+    "nom" : "sandwichs wrap froma", 
+    "prix" : NumberInt(70), 
+    "ingrediens" : "(chicken,fromage,pains)", 
+    "Quantity" : NumberInt(12), 
+    "codePromo" : "7900", 
+    "image" : "sandwichs-wrap-froma.png", 
+    "souCategory" : ObjectId("601ffbedcd8371140457693b")
+},
+{ 
+    "_id" : ObjectId("60216da482f4c04c986f1b3d"), 
+    "nom" : "petit wrap", 
+    "prix" : NumberInt(55), 
+    "ingrediens" : "(chicken,fromage,pains)", 
+    "Quantity" : NumberInt(12), 
+    "codePromo" : "99", 
+    "image" : "petit_wrap.png", 
+    "souCategory" : ObjectId("601ffbedcd8371140457693b")
+},
+{ 
+    "_id" : ObjectId("60216e0c82f4c04c986f1b3e"), 
+    "nom" : "filetaufiche mcdonalds", 
+    "prix" : NumberInt(55), 
+    "ingrediens" : "(Viande,fromage,pains)", 
+    "Quantity" : NumberInt(12), 
+    "codePromo" : "99", 
+    "image" : "icone_filetaufiche_mcdonalds.png", 
+    "souCategory" : ObjectId("601ffb7ccd8371140457693a")
+},
+{ 
+    "_id" : ObjectId("60216e6782f4c04c986f1b3f"), 
+    "nom" : "chicken Nuggets", 
+    "prix" : NumberInt(75), 
+    "ingrediens" : "(chicken_Nuggets)", 
+    "Quantity" : NumberInt(10), 
+    "codePromo" : "99", 
+    "image" : "chicken_Nuggets.png", 
+    "souCategory" : ObjectId("601ffd07cd8371140457693f")
+},
+{ 
+    "_id" : ObjectId("60216e7b82f4c04c986f1b40"), 
+    "nom" : "chicken Nuggets", 
+    "prix" : NumberInt(75), 
+    "ingrediens" : "(chicken_Nuggets)", 
+    "Quantity" : NumberInt(10), 
+    "codePromo" : "99", 
+    "image" : "chicken-Nuggets.png", 
+    "souCategory" : ObjectId("601ffd07cd8371140457693f")
+},
+{ 
+    "_id" : ObjectId("60216e8c82f4c04c986f1b41"), 
+    "nom" : "chicken Nuggets", 
+    "prix" : NumberInt(75), 
+    "ingrediens" : "(chicken_Nuggets)", 
+    "Quantity" : NumberInt(10), 
+    "codePromo" : "99", 
+    "image" : "chicken-Nuggets2.png", 
+    "souCategory" : ObjectId("601ffd07cd8371140457693f")
+},
+{ 
+    "_id" : ObjectId("60216eac82f4c04c986f1b42"), 
+    "nom" : "chicken Nuggets x6", 
+    "prix" : NumberInt(75), 
+    "ingrediens" : "(chicken_Nuggets)", 
+    "Quantity" : NumberInt(10), 
+    "codePromo" : "99", 
+    "image" : "nuggets-6.png", 
+    "souCategory" : ObjectId("601ffd07cd8371140457693f")
+},
+{ 
+    "_id" : ObjectId("60216ec382f4c04c986f1b43"), 
+    "nom" : "chicken Nuggets petit x6", 
+    "prix" : NumberInt(75), 
+    "ingrediens" : "(chicken_Nuggets)", 
+    "Quantity" : NumberInt(10), 
+    "codePromo" : "99", 
+    "image" : "petit.png", 
+    "souCategory" : ObjectId("601ffd07cd8371140457693f")
+},
+{ 
+    "_id" : ObjectId("60216f1482f4c04c986f1b44"), 
+    "nom" : "chicken salad", 
+    "prix" : NumberInt(60), 
+    "ingrediens" : "(Salade ,chicken)", 
+    "Quantity" : NumberInt(20), 
+    "codePromo" : "19", 
+    "image" : "—Pngtree—chicken salad_4983788.png", 
+    "souCategory" : ObjectId("601ffde4cd83711404576943")
+},
+{ 
+    "_id" : ObjectId("60216f2c82f4c04c986f1b45"), 
+    "nom" : "salade cesar", 
+    "prix" : NumberInt(60), 
+    "ingrediens" : "(Salade ,chicken)", 
+    "Quantity" : NumberInt(20), 
+    "codePromo" : "19", 
+    "image" : "salade-cesar.png", 
+    "souCategory" : ObjectId("601ffde4cd83711404576943")
+},
+{ 
+    "_id" : ObjectId("60216f8e82f4c04c986f1b46"), 
+    "nom" : "salade", 
+    "prix" : NumberInt(60), 
+    "ingrediens" : "(Salade )", 
+    "Quantity" : NumberInt(20), 
+    "codePromo" : "19", 
+    "image" : "salage-2.jfif", 
+    "souCategory" : ObjectId("601ffe2acd83711404576945")
+},
+{ 
+    "_id" : ObjectId("60216fb282f4c04c986f1b47"), 
+    "nom" : "salade", 
+    "prix" : NumberInt(60), 
+    "ingrediens" : "(Salade )", 
+    "Quantity" : NumberInt(20), 
+    "codePromo" : "19", 
+    "image" : "salade3.jfif", 
+    "souCategory" : ObjectId("601ffe2acd83711404576945")
+},
+{ 
+    "_id" : ObjectId("60216ffa82f4c04c986f1b48"), 
+    "nom" : "sprite", 
+    "prix" : NumberInt(8), 
+    "ingrediens" : "(Salade )", 
+    "Quantity" : NumberInt(50), 
+    "codePromo" : "10", 
+    "image" : "sprite.jpg", 
+    "souCategory" : ObjectId("601ffe7fcd83711404576946")
+},
+{ 
+    "_id" : ObjectId("6021701482f4c04c986f1b49"), 
+    "nom" : "Sprite mix", 
+    "prix" : NumberInt(10), 
+    "ingrediens" : "(sprite mix)", 
+    "Quantity" : NumberInt(50), 
+    "codePromo" : "10", 
+    "image" : "sprite.jpg", 
+    "souCategory" : ObjectId("601ffe7fcd83711404576946")
+},
+{ 
+    "_id" : ObjectId("6021704582f4c04c986f1b4a"), 
+    "nom" : "hawai", 
+    "prix" : NumberInt(8), 
+    "ingrediens" : "(hawai )", 
+    "Quantity" : NumberInt(50), 
+    "codePromo" : "10", 
+    "image" : "hawai.png", 
+    "souCategory" : ObjectId("601ffe7fcd83711404576946")
+},
+{ 
+    "_id" : ObjectId("6021706082f4c04c986f1b4b"), 
+    "nom" : "coca", 
+    "prix" : NumberInt(8), 
+    "ingrediens" : "(coca )", 
+    "Quantity" : NumberInt(50), 
+    "codePromo" : "10", 
+    "image" : "coca.jpg", 
+    "souCategory" : ObjectId("601ffe7fcd83711404576946")
+},
+{ 
+    "_id" : ObjectId("6021707882f4c04c986f1b4c"), 
+    "nom" : "fanta", 
+    "prix" : NumberInt(8), 
+    "ingrediens" : "(fanta )", 
+    "Quantity" : NumberInt(50), 
+    "codePromo" : "10", 
+    "image" : "fanta.jpg", 
+    "souCategory" : ObjectId("601ffe7fcd83711404576946")
+},
+{ 
+    "_id" : ObjectId("6021709982f4c04c986f1b4d"), 
+    "nom" : "coca", 
+    "prix" : NumberInt(10), 
+    "ingrediens" : "(coca)", 
+    "Quantity" : NumberInt(50), 
+    "codePromo" : "10", 
+    "image" : "coca.jpg", 
+    "souCategory" : ObjectId("601ffe7fcd83711404576946")
+},
+{ 
+    "_id" : ObjectId("602173ad733ee02d70ef9483"), 
+    "nom" : "sidi ali mcdonalds", 
+    "prix" : NumberInt(8), 
+    "ingrediens" : "(sidi_ali_mcdonalds )", 
+    "Quantity" : NumberInt(50), 
+    "codePromo" : "10", 
+    "image" : "icone_sidi_ali_mcdonalds.png", 
+    "souCategory" : ObjectId("601ffe7fcd83711404576946")
+},
+{ 
+    "_id" : ObjectId("602173e2733ee02d70ef9484"), 
+    "nom" : "minute maid", 
+    "prix" : NumberInt(10), 
+    "ingrediens" : "(minute maid )", 
+    "Quantity" : NumberInt(50), 
+    "codePromo" : "10", 
+    "image" : "minute_maid.png", 
+    "souCategory" : ObjectId("601ffe7fcd83711404576946")
+},
+{ 
+    "_id" : ObjectId("60217ae38418ea3de40725a4"), 
+    "nom" : "milkshake fraise", 
+    "prix" : NumberInt(25), 
+    "ingrediens" : "(milkshake_fraise)", 
+    "Quantity" : NumberInt(15), 
+    "codePromo" : "10", 
+    "image" : "icone_milkshake_fraise.png", 
+    "souCategory" : ObjectId("601ffee5cd83711404576949")
+},
+{ 
+    "_id" : ObjectId("60217b048418ea3de40725a5"), 
+    "nom" : "milkshake vanille", 
+    "prix" : NumberInt(25), 
+    "ingrediens" : "(milkshake_vanille)", 
+    "Quantity" : NumberInt(15), 
+    "codePromo" : "10", 
+    "image" : "icone_milkshake_vanille.png", 
+    "souCategory" : ObjectId("601ffee5cd83711404576949")
+},
+{ 
+    "_id" : ObjectId("60217b388418ea3de40725a6"), 
+    "nom" : "mcfizz pina colada mini", 
+    "prix" : NumberInt(25), 
+    "ingrediens" : "(mcfizz-pina-colada-mini)", 
+    "Quantity" : NumberInt(15), 
+    "codePromo" : "2344", 
+    "image" : "mcfizz-pina-colada-mini.png", 
+    "souCategory" : ObjectId("601ffee5cd83711404576949")
+},
+{ 
+    "_id" : ObjectId("60217b618418ea3de40725a7"), 
+    "nom" : "mcfizz pamplemousse mini", 
+    "prix" : NumberInt(25), 
+    "ingrediens" : "(mcfizz-pamplemousse-mini)", 
+    "Quantity" : NumberInt(15), 
+    "codePromo" : "2344", 
+    "image" : "mcfizz-pamplemousse-mini.png", 
+    "souCategory" : ObjectId("601ffee5cd83711404576949")
+},
+{ 
+    "_id" : ObjectId("60217c7b8418ea3de40725a8"), 
+    "nom" : "fries small", 
+    "prix" : NumberInt(15), 
+    "ingrediens" : "(fries-small)", 
+    "Quantity" : NumberInt(20), 
+    "codePromo" : "1344", 
+    "image" : "fries-small.png", 
+    "souCategory" : ObjectId("602048ffbb72f015c8b4928d")
+},
+{ 
+    "_id" : ObjectId("60217ca48418ea3de40725a9"), 
+    "nom" : "fries large", 
+    "prix" : NumberInt(20), 
+    "ingrediens" : "(fries-large)", 
+    "Quantity" : NumberInt(20), 
+    "codePromo" : "1344", 
+    "image" : "fries-large.png", 
+    "souCategory" : ObjectId("602048ffbb72f015c8b4928d")
+},
+{ 
+    "_id" : ObjectId("60217d2e8418ea3de40725aa"), 
+    "nom" : "brownie mcdonalds", 
+    "prix" : NumberInt(25), 
+    "ingrediens" : "(brownie_mcdonalds)", 
+    "Quantity" : NumberInt(20), 
+    "codePromo" : "466", 
+    "image" : "icone_brownie_mcdonalds.png", 
+    "souCategory" : ObjectId("60204952bb72f015c8b4928e")
+},
+{ 
+    "_id" : ObjectId("60217d548418ea3de40725ab"), 
+    "nom" : "choco glace mcdonalds", 
+    "prix" : NumberInt(25), 
+    "ingrediens" : "(icone_choco_glace_mcdonalds)", 
+    "Quantity" : NumberInt(30), 
+    "codePromo" : "466", 
+    "image" : "icone_choco_glace_mcdonalds.png", 
+    "souCategory" : ObjectId("60204952bb72f015c8b4928e")
+},
+{ 
+    "_id" : ObjectId("60217d7f8418ea3de40725ac"), 
+    "nom" : "petit donuts caramel fraise", 
+    "prix" : NumberInt(25), 
+    "ingrediens" : "(petit_donuts_caramel_fraise)", 
+    "Quantity" : NumberInt(30), 
+    "codePromo" : "466", 
+    "image" : "petit_donuts_caramel_fraise.png", 
+    "souCategory" : ObjectId("60204952bb72f015c8b4928e")
+},
+{ 
+    "_id" : ObjectId("60217dcc8418ea3de40725ad"), 
+    "nom" : "kitkat mcflurry", 
+    "prix" : NumberInt(35), 
+    "ingrediens" : "(kitkat_mcflurry)", 
+    "Quantity" : NumberInt(20), 
+    "codePromo" : "560", 
+    "image" : "kitkat_mcflurry-web.png", 
+    "souCategory" : ObjectId("60204971bb72f015c8b4928f")
+},
+{ 
+    "_id" : ObjectId("60217dfe8418ea3de40725ae"), 
+    "nom" : "sandae caramel", 
+    "prix" : NumberInt(20), 
+    "ingrediens" : "(sandae_caramel)", 
+    "Quantity" : NumberInt(30), 
+    "codePromo" : "560", 
+    "image" : "sandae_caramel.png", 
+    "souCategory" : ObjectId("60204971bb72f015c8b4928f")
+},
+{ 
+    "_id" : ObjectId("60217e1e8418ea3de40725af"), 
+    "nom" : "sandae chocolat", 
+    "prix" : NumberInt(20), 
+    "ingrediens" : "(sandae_chocolat)", 
+    "Quantity" : NumberInt(30), 
+    "codePromo" : "560", 
+    "image" : "sandae_chocolat.png", 
+    "souCategory" : ObjectId("60204971bb72f015c8b4928f")
+}
