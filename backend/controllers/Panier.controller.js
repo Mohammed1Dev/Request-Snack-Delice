@@ -50,6 +50,19 @@ const Add= (req,res,next)=>{
             });
         });
 }
+/*const findPanierProduct= (req,res,next)=>{
+    var produit = req.body.produit;
+    Panier.find({
+        produit:produit
+    }).then(response=>{
+        res.json(response);
+    }).then(err=>{
+        res.json({
+            message:"error"
+        });
+    })
+}
+*/
 const updatePanier=(req,res,next)=>{
     let  id =req.params.id;
     let Updatepanier= {
