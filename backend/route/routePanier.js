@@ -4,10 +4,7 @@ const route = express.Router();
 route.get("/panier",panier.listPanier);
 route.get("/panierProduct",panier.listPanierProduct)
 route.post("/addPanier",panier.Add);
-/*route.get("//:id",product.ProductSouCategorie);
-route.post("/addProduct",product.Add);
-route.delete("/removeAll",product.removeAll);
-route.patch("/updateProduit/:id",product.UpdateProduct);
-
-route.get("/productDetails/:id",product.productDetail);*/
+route.post("/updatePanier/:id",panier.updatePanier);
+route.get("/removePanier/:id",panier.deletePanier);
+route.get("/removeAllPanier",panier.removeAllPanier)
 module.exports=route;

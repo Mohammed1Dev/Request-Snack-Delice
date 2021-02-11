@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const {ObjectId} = require('mongodb')
+const {ObjectId} = require('mongodb');
 const schema = mongoose.Schema;
 
 const PanierSchema = new schema({
@@ -14,7 +14,7 @@ const PanierSchema = new schema({
         },
          produit: {
             type: ObjectId,
-            ref: 'Product'
+            ref: 'Products'
         }
      
 }, 

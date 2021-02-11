@@ -1,3 +1,4 @@
+
 fillLang(localStorage.getItem('Lang'));
  
   
@@ -117,7 +118,7 @@ for (let i = 0; i < data.length; i++) {
 function addPanier(id){
 axios.post('http://localhost:3000/api/addPanier', {
    Quantity:1,
-   product: id
+   produit: id
    })
    .then(function (response) {
     console.log(response);
@@ -139,57 +140,47 @@ async function nbrPanier(){
 
 
 async function getAllPanier(){
-    var doc = await axios.get(`http://localhost:3000/api/panier/`);
+    var doc = await axios.get(`http://localhost:3000/api/panierProduct/`);
     var body= document.getElementById("tbody");
+    body.innerHTML="";
     var data = doc.data;
     console.log("data est " + JSON.stringify(data));
+
     if(data.length>0){
         for (let i = 0; i < data.length; i++) {
-
+            console.log("data est : " + data[i].product_panier[0]);
+    for(let j=0;j<data[i].product_panier.length;j++){
 body.innerHTML +=`
            
                               
                                     <tr class="text-center">
                                         <td class="product-remove">
-                                            <a href="panier.php?action=supprimer&idp=" title="panier - supprimer produit"><i class="fas fa-trash-alt"></i></span></a>
+                                            <a href="#" title="delete - supprimer produit" onclick="deletePanierProduct('${data[i]._id}')"><img src="public/img/delete.png" style="width: 50px;" ></a>
                                         </td>
                                         <td class="image-prod">
-                                            
-                                        </td>
+										<div class="img" style="background-image:url(public/img/${data[i].product_panier[j].image});     width: 80px;
+                                        height: 60px;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;"></div>
+									</td>
                                         <td class="product-name">
-                                            <h3>${data[i]._id}</h3>
+                                            <h3>${data[i].product_panier[j].nom}</h3>
                                         </td>
-                                        <td class="price"> ${data[i].prix}</td>
+                                        <td class="price"> ${data[i].product_panier[j].prix}</td>
                                         <td class="quantity">
                                             <div class="input-group mb-3">
                                            
-                                                <input class="quantity form-control input-number" max="" min="1" name="quantity" id="inputQ" onchange="" type="number" value="">
+                                                <input class="quantity form-control input-number" max="${data[i].product_panier[j].Quantity}" min="1" onchange="changeFunction('${data[i]._id}',${data[i].product_panier[j].Quantity},this.value)" name="quantity" id="inputQ${data[i].product_panier[j]._id}"  type="number" value="${data[i].Quantity}">
                                             </div>
                                         </td>
-                                        <td class="total"></td>
+                                        <td class="total">
+                                        <h3 ><span class="prixTotal" >${data[i].product_panier[j].prix * data[i].Quantity}</span> DH</h3>
+                                        </td>
                                     </tr>
                                `;
-                              /*  </tbody>
-                            </table>
-                            <a class="btn btn-primary py-3 px-4 float-right" href="panier.php">Mettre à jour </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col col-lg-5 col-md-6 mt-5 cart-wrap ftco-animate">
-                        <div class="cart-total mb-3">
-                            <h3>Totaux du panier</h3>
-                            <p class="d-flex"><span>Total</span> <span>.00 DHs</span></p>
-                            <p class="d-flex"><span>Livraison</span> <span>20.00 DHs</span></p>
-                            <hr>
-                            <p class="d-flex total-price"><span>Total</span> <span>.00 DHs</span></p>
-                        </div>
-                        <p class="text-center"><a class="btn btn-primary py-3 px-4" href="checkout.php" title="Payment">Passer à la caisse</a></p>
-                    </div>
-                </div>
-             
-            </div>
-        </section>*/
+                        
+
+    }
         }
     }else{
         body.innerHTML +=`<tr class="text-center">
@@ -197,9 +188,41 @@ body.innerHTML +=`
         </tr>`;
     }
         
-body.innerHTML +=`
- </tbody>
-
-`;
-
 }
+    //Change Quantity
+    function changeFunction(id,quantityTota,quantite){
+        var idp = id;
+       // quantite = document.getElementById("inputQ" + idp).value;
+        console.log("klkl " + quantite);
+        if(quantityTota<=quantite && quantite<=0){
+            alert("Sorry le nombre de quantity not exist ");
+        }
+        if(quantityTota>quantite){
+     axios.post(`http://localhost:3000/api/updatePanier/${idp}`,{
+            Quantity:quantite
+    }).then(function(response){
+        console.log("Update " + response);
+    }).catch(function(err){
+        console.log(err);
+    });
+       location.href="MealsMenu.html";
+    }
+}
+
+function prixTotalProduct(){
+    var priceTotal=0;
+    var PrixTotalProduit=document.getElementsByClassName("prixTotal");
+for(var i=0;i<PrixTotalProduit.length;i++){
+    priceTotal +=parseInt(PrixTotalProduit[i].innerHTML);
+}
+document.getElementById("priceTotal").innerHTML= priceTotal + ".00 DHs";
+   
+}
+
+//delete panier
+async function deletePanierProduct(idp){
+    var doc = await axios.get(`http://localhost:3000/api/removePanier/${idp}`);
+    var supprimer = doc.data;
+    location.href="MealsMenu.html";
+}
+
