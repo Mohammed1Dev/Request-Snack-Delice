@@ -95,6 +95,22 @@ res.json(response);
     })
 
 }
+
+//Commander valider 
+var commandePasser=(req,res,next)=>{
+let idProduit = req.params.id;
+let lengthQuantity = req.params.lengthQuantity;
+
+var newQuantity=parseInt(lengthQuantity-req.body.Quantity);
+let UpdateProduit= {
+    Quantity: newQuantity
+  };
+  Product.findByIdAndUpdate(idProduit,{$set:UpdateProduit}).then(response=>{
+    res.json({
+        message:"Update Successfuly"
+    });
+  })
+}
 module.exports={
-    listProduct,ProductSouCategorie,Add,removeAll,UpdateProduct,productDetail
+    listProduct,ProductSouCategorie,Add,removeAll,UpdateProduct,productDetail,commandePasser
 }

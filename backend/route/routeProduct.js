@@ -6,6 +6,6 @@ route.get("/product/:id",product.ProductSouCategorie);
 route.post("/addProduct",product.Add);
 route.delete("/removeAll",product.removeAll);
 route.patch("/updateProduit/:id",product.UpdateProduct);
-
+route.post("/commandePasser/:id/:lengthQuantity",product.commandePasser);
 route.get("/productDetails/:id",product.productDetail);
 module.exports=route;
